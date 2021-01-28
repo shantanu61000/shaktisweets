@@ -149,4 +149,12 @@ body {
   font-size: 0.65rem;
   border-radius: 5px;
 }
+
+.add-to-cart-btn:hover {
+  background-color: #740f74;
+  color: white;
+  font-size: 0.7rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
 /*# sourceMappingURL=styles.css.map */

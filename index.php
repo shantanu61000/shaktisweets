@@ -30,7 +30,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-5 pr-0" style="overflow: hidden;">                
+            <div class="col-12 col-sm-6 col-md-5 pr-0">                
                 <div class="somosa">  </div>
                 <div class="prod-info-left">
                     <h4>Samosa</h4>

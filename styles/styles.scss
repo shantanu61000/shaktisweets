@@ -116,6 +116,12 @@ body{
         background-color: $accent-color;
         color: white;
         font-size: 0.65rem;
-        border-radius: 5px;        
+        border-radius: 5px;  
+        &:hover{
+            background-color: #740f74;
+            color:white;
+            font-size: 0.7rem;
+            transition: 0.2s all ease-in-out;
+        }      
     }
    

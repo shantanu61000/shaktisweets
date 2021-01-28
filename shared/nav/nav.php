@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg p-0">
     <div class="container">
             <a class="navbar-brand" href="#">Shaktisweets.in</a>
-            <div class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler hamburger" style="cursor:pointer" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars text-light"> </i>
             </div>  
 
