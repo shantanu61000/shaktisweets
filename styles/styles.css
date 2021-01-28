@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  overflow-x: hidden;
+}
+
+.hero-image {
+  background-image: url(../img/hero.jpg);
+  height: 35vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero-image h2 {
+  overflow-x: hidden;
+  padding: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 0px 5px 20px;
+  font-size: 1.4rem;
+}
+
+.we-serve h2 {
+  background-color: #ff800021;
+  color: #ee7700;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.prod-info-left {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.prod-info-left h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.prod-info-left p {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.prod-info-right {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.prod-info-right h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: right;
+}
+
+.prod-info-right p {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.somosa {
+  background-image: url(../img/samosa.jpg);
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-clip-path: polygon(40% 0%, 55% 20%, 20% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(40% 0%, 55% 20%, 20% 100%, 100% 100%, 100% 0%);
+}
+
+.jalebi {
+  background-image: url(../img/jalebi.jpg);
+  height: 250px;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-clip-path: polygon(80% 0%, 45% 80%, 60% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(80% 0%, 45% 80%, 60% 100%, 0% 100%, 0% 0%);
+}
+
+.malai-barfi {
+  background-image: url(../img/malai-barfi.png);
+  height: 250px;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-clip-path: polygon(40% 0%, 55% 20%, 20% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(40% 0%, 55% 20%, 20% 100%, 100% 100%, 100% 0%);
+}
+
+.imarti {
+  background-image: url(../img/imarti.jpg);
+  height: 250px;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-clip-path: polygon(80% 0%, 45% 80%, 60% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(80% 0%, 45% 80%, 60% 100%, 0% 100%, 0% 0%);
+}
+
+.add-to-cart-btn {
+  background-color: #610661;
+  color: white;
+  font-size: 0.65rem;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

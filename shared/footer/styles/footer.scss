@@ -1,0 +1,29 @@
+@import "../../../styles/colors.scss";
+
+.footer{
+    padding: 1.2rem;
+    background-color: $primary-color;
+    color: white;
+    .footerlogo{
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding:5px 0px 15px 0px;
+    }
+    h6{
+        font-weight:600;
+        font-size: 0.7rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    i{
+        font-size: 0.7rem;
+    }
+}
+.footer-bottom{
+    background-color: rgb(145, 74, 17);
+    color: white;
+    font-size: 0.6rem;
+    padding: 1px;
+
+}
