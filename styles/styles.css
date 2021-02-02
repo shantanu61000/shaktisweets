@@ -50,7 +50,7 @@ body {
 
 .prod-info-left {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +78,7 @@ body {
 
 .prod-info-right {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +143,15 @@ body {
           clip-path: polygon(80% 0%, 45% 80%, 60% 100%, 0% 100%, 0% 0%);
 }
 
+.lawang-latta {
+  background-image: url("../img/lawang lata.jpg");
+  height: 250px;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-clip-path: polygon(40% 0%, 55% 20%, 20% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(40% 0%, 55% 20%, 20% 100%, 100% 100%, 100% 0%);
+}
+
 .add-to-cart-btn {
   background-color: #610661;
   color: white;
@@ -156,5 +165,126 @@ body {
   font-size: 0.7rem;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
+}
+
+.discount {
+  background-image: url("../img/discount.png");
+  background-size: cover;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discount h2 {
+  color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 239, 214, 0.068);
+}
+
+#login-modal .modal-content {
+  border: 0px;
+  background-color: #0000008a;
+  color: white;
+  margin: 0px 30px;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+#login-modal .modal-content #login-modal-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#login-modal .modal-content .modal-header {
+  border: 0px;
+}
+
+#login-modal .modal-content .modal-footer {
+  border: 0px;
+}
+
+#login-modal .modal-content .modal-body {
+  padding-top: 0px;
+}
+
+#login-modal .modal-content .modal-body .form-group {
+  position: relative;
+}
+
+#login-modal .modal-content .modal-body label {
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  margin: 0px;
+}
+
+#login-modal .modal-content .modal-body label.remember-me {
+  font-size: 0.7rem;
+  margin: 0px;
+  margin-left: 5px;
+}
+
+#login-modal .modal-content .modal-body .form-control {
+  height: 1.8rem;
+  border-radius: 6px;
+}
+
+#login-modal .modal-content .modal-body .form-control.get-otp-btn, #login-modal .modal-content .modal-body .form-control.sign-in-btn {
+  background-color: #ff8000;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  border: 0px;
+}
+
+#login-modal .modal-content .modal-body .form-control.get-otp-btn:hover, #login-modal .modal-content .modal-body .form-control.sign-in-btn:hover {
+  background-color: #ff8f1f;
+}
+
+#login-modal .modal-content .modal-body .form-control.get-otp-btn .spinner-border, #login-modal .modal-content .modal-body .form-control.sign-in-btn .spinner-border {
+  height: 0.8rem;
+  width: 0.8rem;
+  padding: 2px;
+}
+
+.blur {
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+}
+
+.up {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  font-size: 0.7rem;
+}
+
+.down {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  color: grey;
+  font-size: 0.7rem;
+}
+
+.response {
+  font-size: 0.6rem;
+  font-weight: normal;
 }
 /*# sourceMappingURL=styles.css.map */

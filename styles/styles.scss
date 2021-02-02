@@ -44,7 +44,7 @@ body{
 
 .prod-info-left{
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 10%;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ body{
 
 .prod-info-right{
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 10%;
     display: flex;
     flex-direction: column;
@@ -112,6 +112,13 @@ body{
         clip-path: polygon(80% 0% , 45% 80% , 60% 100% , 0% 100% , 0% 0%);       
 
     }
+    .lawang-latta{
+        background-image: url("../img/lawang lata.jpg");
+        height: 250px;
+        background-size: cover;
+        overflow: hidden;     
+        clip-path: polygon(40% 0% , 55% 20% , 20% 100% , 100% 100% , 100% 0%); 
+    }
     .add-to-cart-btn{
         background-color: $accent-color;
         color: white;
@@ -125,3 +132,102 @@ body{
         }      
     }
    
+.discount{
+    background-image: url("../img/discount.png");
+    background-size: cover;
+    // background-image: linear-gradient(#000000,#ffffffcb);
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h2{
+        color: white;
+        padding: 20px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+    }
+}
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 239, 214, 0.068);
+    
+}
+#login-modal{
+    .modal-content{
+        border: 0px;
+        background-color:#0000008a;
+        color: white;
+        margin: 0px 30px;
+        padding: 10px;
+        border-radius: 9px;
+        #login-modal-title{
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .modal-header{
+            border: 0px;
+        }
+        .modal-footer{
+            border: 0px;
+        }
+        .modal-body{
+            padding-top:0px ;
+            .form-group{
+                position: relative;
+            }
+            label{
+                transition: 0.2s all linear;
+                margin: 0px;
+                &.remember-me{
+                    font-size: 0.7rem;
+                    margin: 0px;
+                    margin-left: 5px;
+                }
+            }
+            .form-control{
+                height: 1.8rem;
+                border-radius: 6px;
+                &.get-otp-btn, &.sign-in-btn{
+                    background-color: $primary-color;
+                    color: white;
+                    font-size:0.7rem;
+                    font-weight: bold;
+                    text-align: center;
+                    border: 0px;
+                    &:hover{
+                        background-color: $primary-light;
+                    }
+                    .spinner-border{
+                        height: 0.8rem;
+                        width: 0.8rem;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+.blur{
+    filter: blur(25px);
+}
+.up{
+    position: relative;
+    top: 0px;
+    left: 5px;
+    font-size: 0.7rem;    
+}
+.down{
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    color: grey;
+    font-size: 0.7rem;    
+}
+.response{
+    font-size: 0.6rem;
+    font-weight: normal;
+}
