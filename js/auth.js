@@ -40,15 +40,19 @@
 
   function sendOTP(){
     const phoneNumber = "+91"+document.getElementById("phone").value;
+    // const phoneNumber = "+918459751677";
     const appVerifier = window.recaptchaVerifier;
     firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
         .then((confirmationResult) => {
             window.confirmationResult = confirmationResult;
            console.log(confirmationResult);
            console.log("OTP Sent");
-           $(".get-otp-btn").text("Resend OTP");
-           $(".otp-sent-msg").text("OTP sent");
+           $(".get-otp-btn").addClass("d-none");
+           $(".disable-otp").removeClass("d-none");
+           $(".sign-in-btn").removeClass("d-none");
+           $(".otp-sent-msg").html("OTP sent. <a href='#'>Click here to Resend </a>");
            $(".get-otp-spinner").addClass("d-none");
+        // window.confirmationResult = confirmationResult;
         // ...
         }).catch((error) => {
             $(".get-otp-spinner").addClass("d-none");
@@ -59,6 +63,25 @@
         // Error; SMS not sent
         // ...
         });
+  }
+
+  function verifyOTP(){
+    const code = document.getElementById("otp").value;
+
+    confirmationResult.confirm(code).then((result) => {
+      // User signed in successfully.
+      $(".sign-in-spinner").addClass("d-none");
+      console.log("Login success");
+      const user = result.user;
+      console.log(user)
+      // ...
+    }).catch((error) => {
+      // User couldn't sign in (bad verification code?)
+      // ...
+      $(".sign-in-spinner").addClass("d-none");
+      console.log("error");
+      console.log(error);
+    });
   }
 // Initialize the FirebaseUI Widget using Firebase.
 // var ui = new firebaseui.auth.AuthUI(firebase.auth());

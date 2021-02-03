@@ -24,7 +24,6 @@
         </div>
     </div>
 </div>
-
 <!-- Modal -->
 <div class="modal fade show" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -36,16 +35,18 @@
         </button>
       </div>
       <div class="modal-body">
+
         <form action="">
             <div class="form-group">
                 <label for="phone" class="down">Phone</label>
                 <input type="number" class="form-control" id="phone">
             </div>
-            <div class="form-group disable-otp d-none">
+   
+            <div class="form-group disable-otp">
                 <label for="otp" class="down">OTP</label>
-                <input type="text" class="form-control" id="otp">
+                <input type="number" class="form-control" id="otp">
             </div>
-            <div class="form-group d-flex align-items-center">                
+            <div class="form-group d-flex align-items-center m-0 pt-1 pb-1">                
                 <input type="checkbox" checked id="remember-me">                   
                 <label for="remember-me" class="remember-me">Remember me</label>               
             </div>
@@ -56,10 +57,15 @@
                     </div>  
                     Get OTP
                 </button>
-                <p class="response otp-sent-msg pt-2"></p>
+                <p class="response otp-sent-msg pt-2 m-0"></p>
             </div>
             <div class="form-group">
-                <button class="form-control sign-in-btn d-none" type="button" id="sign-in-btn">Login</button>
+                <button class="form-control sign-in-btn" type="button" id="sign-in-btn" >
+                    <div class="spinner-border d-none sign-in-spinner" role="status">
+                        <span class="sr-only">Loading...</span> 
+                    </div>   
+                    Login
+                </button>
             </div>
         </form>     
       </div>

@@ -61,4 +61,15 @@ $(document).ready(function(){
          }         
         
     });
+
+    $(".sign-in-btn").click(() => {
+        console.log("sign-in button clicked");
+        if($("#otp").val() == ""){
+            $(".otp-sent-msg").text("Please enter the OTP");
+        }
+        else{
+            $(".sign-in-spinner").removeClass("d-none");
+            verifyOTP()
+        }
+    });
  });
